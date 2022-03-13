@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Support\Facades\Facade;
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -137,7 +138,6 @@ return [
     */
 
     'providers' => [
-
         /*
          * Laravel Framework Service Providers...
          */
@@ -176,7 +176,6 @@ return [
         // App\Shared\Infrastructure\Providers\BroadcastServiceProvider::class,
         App\Shared\Infrastructure\Providers\EventServiceProvider::class,
         App\Shared\Infrastructure\Providers\RouteServiceProvider::class,
-
     ],
 
     /*
@@ -193,5 +192,4 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // ...
     ])->toArray(),
-
 ];
