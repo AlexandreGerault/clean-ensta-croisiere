@@ -12,9 +12,11 @@
 */
 
 use Illuminate\Foundation\Testing\TestCase;
+use PHPUnit\Framework\TestCase as UnitTestCase;
 use Tests\CreatesApplication;
 
 uses(TestCase::class, CreatesApplication::class)->in('Feature');
+uses(UnitTestCase::class)->in('Domain');
 
 /*
 |--------------------------------------------------------------------------
