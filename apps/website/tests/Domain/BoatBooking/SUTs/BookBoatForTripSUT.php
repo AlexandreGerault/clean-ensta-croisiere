@@ -11,8 +11,8 @@ use Tests\Domain\BoatBooking\Adapters\Presenters\BookBoatForTripTestPresenter;
 
 class BookBoatForTripSUT
 {
-    public const STAFF_ID = "5527b399-d228-4526-bc52-7a8871ec1dea";
-    public const SKIPPER_ID = "2428314c-2a99-4d2f-814d-4a01b420dec1";
+    public const STAFF_ID = '5527b399-d228-4526-bc52-7a8871ec1dea';
+    public const SKIPPER_ID = '2428314c-2a99-4d2f-814d-4a01b420dec1';
 
     public BookBoatForTripRequest $request;
     public BookBoatForTripTestPresenter $presenter;
@@ -53,7 +53,8 @@ class BookBoatForTripSUT
     {
         $this->userId = self::SKIPPER_ID;
         $this->skipperId = self::SKIPPER_ID;
-        $this->role = "skipper";
+        $this->role = 'skipper';
+
         return $this;
     }
 
@@ -61,7 +62,8 @@ class BookBoatForTripSUT
     {
         $this->userId = self::STAFF_ID;
         $this->skipperId = self::SKIPPER_ID;
-        $this->role = "staff";
+        $this->role = 'staff';
+
         return $this;
     }
 
@@ -90,6 +92,7 @@ class BookBoatForTripSUT
     public function confirmed(): BookBoatForTripSUT
     {
         $this->state = TripState::PLANNED;
+
         return $this;
     }
 }

@@ -20,7 +20,7 @@ class Trip
 
     public function name(): string
     {
-        return "Sortie en mer";
+        return 'Sortie en mer';
     }
 
     public function isFree(): bool

@@ -24,6 +24,6 @@ class BookBoatForTripTestPresenter implements BookBoatForTripPresenter
 
     public function userIsNotAllowedToBookBoat(): void
     {
-        throw new \RuntimeException("User is not allowed to book the boat");
+        throw new \RuntimeException('User is not allowed to book the boat');
     }
 }

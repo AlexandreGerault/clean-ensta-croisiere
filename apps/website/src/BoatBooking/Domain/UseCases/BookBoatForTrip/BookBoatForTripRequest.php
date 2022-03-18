@@ -15,8 +15,7 @@ class BookBoatForTripRequest
         public readonly string $state,
         string $userId,
         string $skipperId
-    )
-    {
+    ) {
         $this->userId = $userId;
         $this->skipperId = $skipperId;
     }

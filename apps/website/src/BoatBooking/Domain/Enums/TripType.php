@@ -6,5 +6,5 @@ namespace App\BoatBooking\Domain\Enums;
 
 enum TripType: string
 {
-    case BOAT_TRIP = "boat_trip";
+    case BOAT_TRIP = 'boat_trip';
 }

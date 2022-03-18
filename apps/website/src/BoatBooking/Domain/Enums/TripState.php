@@ -6,6 +6,6 @@ namespace App\BoatBooking\Domain\Enums;
 
 enum TripState: string
 {
-    case UNCONFIRMED = "unconfirmed";
-    case PLANNED = "planned";
+    case UNCONFIRMED = 'unconfirmed';
+    case PLANNED = 'planned';
 }
