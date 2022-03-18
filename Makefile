@@ -26,7 +26,7 @@ analyse: ## Static analysis
 	docker-compose exec php-fpm vendor/bin/phpstan analyse --memory-limit=2G
 
 test: ## Start the whole test suite
-	docker-compose exec php-fpm php vendor/bin/phpunit
+	docker-compose exec php-fpm php vendor/bin/pest
 
 prepare: format analyse test
 
